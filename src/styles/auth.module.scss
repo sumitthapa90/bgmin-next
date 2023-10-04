@@ -1,0 +1,286 @@
+@import './mixins.scss';
+@import './variable.scss';
+
+.main_container {
+  @include main_container;
+  // position: relative;
+}
+
+.background_container {
+  @include background_container;
+
+  margin-top: 3rem;
+  @media (max-width: $breakpoint-xSmall) {
+    margin: 1rem 1rem;
+    .SubHeading {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: $breakpoint-xs) {
+    margin: 1rem 1rem;
+  }
+  @media (max-width: $breakpoint-sm) {
+    margin: 1rem 1rem;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin: 1rem 1rem;
+  }
+  @media (max-width: $breakpoint-ms) {
+    margin: 1rem 1rem;
+  }
+  @media (max-width: $breakpoint-lg) {
+    margin: 1rem 1rem;
+  }
+}
+
+.container {
+  @include container;
+  position: relative;
+  // font-family: Century Gothic;
+  .backButton {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    margin: 1rem 1rem;
+
+    width: 300px;
+    .btnStyle {
+      width: 250px;
+    }
+    .forgotDesc {
+      font-size: 11px;
+    }
+    .link_sign {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    height: 100vh;
+    margin: 1rem 1.5rem;
+  }
+}
+
+.logo img {
+  @include logo;
+  display: flex;
+
+  margin: 0 auto;
+}
+
+.forgotDescsec {
+  padding-left: 8px;
+  color: #124260;
+  letter-spacing: 1px;
+}
+
+.headDesc {
+  @include headDesc;
+  margin: 0.5rem;
+}
+
+.heading {
+  @include heading;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @media (max-width: $breakpoint-xSmall) {
+    width: 100%;
+  }
+}
+
+.email img,
+.password img {
+  // margin: 0px 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.input_box {
+  @include input_box;
+  border-bottom: 2px solid white;
+  @media (max-width: $breakpoint-xs) {
+    width: 100%;
+  }
+}
+.email_wrapper {
+  @include email_wrapper;
+}
+.password_wrapper {
+  @include email_wrapper;
+}
+.email_wrapper ::placeholder {
+  @include email_wrapper;
+  width: 100%;
+}
+
+.password_wrapper ::placeholder {
+  @include email_wrapper;
+}
+
+.checkbox_wrapper {
+  @include checkbox_wrapper;
+}
+
+.error {
+  @include error;
+}
+
+.forgetbutton {
+  @include button_wrapper;
+  margin-top: 18px;
+  color: white !important;
+  @media (max-width: $breakpoint-xSmall) {
+    padding: 12px 30px;
+    width: 100%;
+  }
+}
+
+.SignIn_button {
+  @include button_wrapper;
+  margin: 1.5rem 0rem;
+
+  @media (max-width: $breakpoint-xs) {
+    width: 100%;
+  }
+}
+.sign_accout {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+.log_acc_cls {
+  display: flex;
+  justify-content: center;
+  margin: 16px !important;
+  @include signin;
+  text-decoration-line: none;
+  color: #003556 !important;
+}
+.link_sign {
+  font-weight: 900;
+  text-decoration-line: underline;
+}
+.signin {
+  @include signin;
+  text-decoration-line: none;
+  color: #003556 !important;
+  margin: 16px;
+}
+.link_sign {
+  font-weight: 900;
+  text-decoration-line: underline;
+}
+.signin a {
+  color: var(--bs-orange);
+  width: -webkit-fill-available;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  @media (max-width: $breakpoint-xs) {
+    margin-right: 0;
+  }
+}
+
+.error {
+  @include error;
+}
+
+.error_message {
+  color: var(--bs-red);
+}
+.signin {
+  color: black;
+}
+.forgotdesc {
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  color: #003556 !important;
+  text-align: center;
+}
+
+.input_box input {
+  color: black;
+}
+.password_wrapper {
+  width: 100%;
+}
+
+.signin_withgoogle {
+  border: 2px solid #003556;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-family: Century gothic;
+  color: #003556;
+  justify-content: center;
+  margin: 1.5rem 0rem 1rem 0rem;
+  border-radius: 8px;
+  gap: 10px;
+  font-weight: bold;
+}
+.signin_withgoogle .googleButton {
+  color: #003556;
+  border: none;
+  background-color: transparent !important;
+}
+
+.rememberMe {
+  padding: 0px 5px;
+}
+
+.checkbox_wrapper [type='checkbox'] {
+  color-scheme: white;
+  color: white;
+}
+
+.heading {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #003556;
+  font-weight: 700;
+}
+.SubHeading {
+  text-align: center;
+  color: #5c5c5c !important;
+  font-size: 16px;
+}
+.btnStyle {
+  color: #003556 !important;
+  border: 1px solid !important;
+  width: 330px;
+  margin-top: 10px;
+  background-color: transparent !important;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounded {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+
+}
+.flexGap {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.circle{
+  background-color: #003556;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+}

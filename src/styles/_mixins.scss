@@ -1,0 +1,196 @@
+@mixin main_container {
+  background-image: url('../../public/assests/backgroundimage.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+@mixin logo {
+  height: 100%;
+  padding-left: 20px;
+}
+
+@mixin container {
+  opacity: 0.9;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  overflow: visible;
+  place-content: center;
+  flex-direction: column;
+  width: 380px;
+  background-color: rgb(202 221 234 / 87%);
+  border-radius: 23px;
+  padding: 5px 25px;
+  @media (max-width: $breakpoint-xSmall) {
+    min-height: 100vh;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    min-height: 100vh;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    min-height: 100vh;
+  }
+  @media (max-width: $breakpoint-md) {
+    min-height: 100vh;
+  }
+  @media (max-width: $breakpoint-lg) {
+    min-height: 100vh;
+  }
+}
+@mixin headDesc {
+  color: #003354;
+  display: flex;
+  justify-content: center;
+  font-family: Century Gothic;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+
+  @media (max-width: $breakpoint-xs) {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: var(--bs-body-font-family);
+  }
+}
+
+@mixin background_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin heading {
+  display: flex;
+  justify-content: center;
+  color: #5c5c5c;
+  font-family: Century Gothic;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  line-height: 22px;
+}
+
+@mixin input_box {
+  font-style: var(--bs-font-style);
+  font-weight: var(--bs-body-font-weight);
+  font-size: var(--bs-body-font-size);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  @media (max-width: $breakpoint-xSmall) {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 1rem;
+  }
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 1rem;
+  }
+}
+
+@mixin email_wrapper {
+  color: #003354;
+  font-style: var(--bs-font-style);
+  font-weight: var(--bs-body-font-weight);
+  font-family: Century Gothi;
+  font-weight: 700;
+  width: 100% !important;
+  font-size: 14px;
+  border-style: none !important;
+}
+
+@mixin password_wrapper {
+  @include email_wrapper;
+}
+
+@mixin button_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #003354 !important;
+}
+
+@mixin checkbox_wrapper {
+  font-style: var(--bs-font-style);
+  font-weight: var(--bs-body-font-weight);
+  font-size: var(--bs-font-size);
+  line-height: var(--bs-line-height);
+  color: #003354;
+  margin: 1rem 0rem;
+  position: relative;
+}
+
+@mixin signin {
+  color: #003354;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-style: var(--bs-font-style);
+  font-size: var(--bs-font-size);
+  line-height: var(--bs-line-height);
+  font-weight: var(--bs-body-font-weight);
+  text-decoration-line: underline;
+}
+
+@mixin error {
+  color: #ca0000;
+  font-weight: 600;
+  font-size: 12px;
+
+  p {
+    white-space: initial;
+  }
+}
+
+@mixin tableheader {
+  background: #003354;
+  color: #ffff;
+  font-family: Century Gothic;
+  font-size: 16px;
+  font-weight: 700;
+}
+@mixin tdbody {
+  background-color: #002d47;
+  border: 8px solid #003554;
+}
+@mixin spectator_model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@mixin spectator_model_heading {
+  background: #ff7a00;
+  text-align: center;
+  padding: 26px;
+  color: white;
+  font-size: 23px;
+  font-family: Century Gothic;
+  font-weight: 700;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+@mixin spectator_modelfield {
+  border: none !important;
+  border-bottom: 1px solid #9e9e9e !important;
+  border-radius: 0px !important;
+  margin: 12px 0px;
+  padding: 2px !important;
+}

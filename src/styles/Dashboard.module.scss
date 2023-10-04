@@ -1,0 +1,833 @@
+@import './mixins.scss';
+
+@import './variable.scss';
+
+.main_container {
+  width: 100vw;
+  display: flex;
+  background-color: rgba(0, 53, 84, 1);
+  min-height: 100vh;
+  color: white;
+}
+
+.squad_match {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  width: auto;
+  @media (max-width: $breakpoint-sm) {
+    margin-left: 6px !important;
+  }
+  @media (max-width: $breakpoint-ms) {
+    margin-left: 156px !important;
+  }
+  @media (max-width: $breakpoint-xs) {
+    margin-left: 8px !important;
+  }
+}
+
+.abcd {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_wrapper {
+  z-index: 99;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  line-height: 48px;
+  font-size: 40px;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+  @media (max-width: $breakpoint-xs) {
+    padding: 0px 26px !important;
+  }
+  @media (max-width: $breakpoint-sm) {
+    padding: 0px 136px;
+  }
+}
+
+.desc_container {
+  display: flex;
+  flex-direction: column;
+}
+.imgSection img {
+  height: 416px;
+  border-radius: 30px;
+  width: 100%;
+  border-radius: 4px;
+  opacity: 0.6;
+  @media (max-width: $breakpoint-xSmall) {
+    height: 280px !important;
+  }
+  @media (max-width: $breakpoint-xs) {
+    height: auto;
+  }
+  @media (max-width: $breakpoint-ms) {
+    height: 250px;
+  }
+}
+
+.room_container {
+  display: flex;
+  margin: 10px 10px;
+  column-gap: 18px;
+  @media (max-width: $breakpoint-xSmall) {
+    margin: 10px 0px;
+    flex-direction: column;
+  }
+  @media (max-width: $breakpoint-xs) {
+    margin: 10px 0px;
+    flex-direction: column;
+  }
+  @media (max-width: $breakpoint-sm) {
+    margin: 10px 0px;
+    flex-direction: column;
+  }
+  @media (max-width: $breakpoint-md) {
+  }
+}
+
+.heading h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.winnings {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+  width: 90%;
+  @media (max-width: $breakpoint-xSmall) {
+    width: auto !important;
+  }
+  @media (max-width: $breakpoint-xs) {
+    width: auto !important;
+  }
+  @media (max-width: $breakpoint-sm) {
+    width: 90% !important;
+  }
+  @media (max-width: $breakpoint-md) {
+    width: 50%;
+  }
+  @media (max-width: $breakpoint-ms) {
+    width: 50%;
+  }
+  @media (max-width: $breakpoint-lg) {
+    width: 50%;
+  }
+}
+
+@media (max-width: $breakpoint-xSmall) {
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: $breakpoint-xs) {
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+}
+
+.container3_img {
+  width: auto;
+  height: 148px;
+}
+
+.tournament_slider {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 3px;
+}
+
+.rs_logo {
+  margin-left: 4px;
+}
+
+.winning_prize {
+  display: inherit;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: Century Gothic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.winning_prize span,
+.id_password span,
+.image_text span {
+  font-size: 14px;
+  font-family: Century Gothic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.spot_line {
+  display: flex;
+  gap: 100px;
+}
+
+.join_button {
+  background-color: rgba(255, 122, 0, 1) !important;
+  color: white !important;
+  display: flex;
+  gap: 40px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  @media (max-width: $breakpoint-xSmall) {
+    width: 16%;
+  }
+}
+
+.winnings_sec_secton {
+  display: flex;
+  gap: 9px;
+  margin: 12px 0px;
+  justify-content: space-between;
+  @media (max-width: $breakpoint-xSmall) {
+    justify-content: flex-start !important;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    justify-content: flex-start !important;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    justify-content: space-between;
+  }
+}
+
+.registeredmatches {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  @media (max-width: $breakpoint-xSmall) {
+    padding: 1px !important;
+  }
+  @media (max-width: $breakpoint-xs) {
+    padding: 1px !important;
+  }
+}
+
+img.slides_image {
+  width: 0px;
+  @media (max-width: $breakpoint-xSmall) {
+    width: 170px;
+  }
+  @media (max-width: $breakpoint-xs) {
+    width: 170px;
+  }
+}
+
+.container2 {
+  align-items: center;
+  justify-content: space-around;
+  padding: 28px 10px;
+  flex-wrap: wrap;
+  width: 90%;
+  @media (max-width: $breakpoint-xSmall) {
+    padding: 28px 1px !important;
+    width: 100% !important;
+  }
+  @media (max-width: $breakpoint-xs) {
+    padding: 28px 6px !important;
+  }
+  @media (max-width: $breakpoint-sm) {
+    padding: 28px 96px;
+    width: 100%;
+  }
+}
+
+.container3 {
+  display: flex !important;
+  @media (max-width: $breakpoint-xSmall) {
+    display: inline-block !important;
+  }
+  @media (max-width: $breakpoint-xs) {
+    display: inline-block !important;
+  }
+}
+
+.container2 img {
+  margin-left: 3%;
+}
+
+.Tournaments {
+  padding: 0px 15px;
+  font-family: Century Gothic;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.content .dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.room_create {
+  display: flex;
+  gap: 50px;
+  padding: 8px 0px;
+  border-bottom: 2px solid white;
+}
+
+.id_password {
+  display: flex;
+  gap: 50px;
+  margin-top: 5px;
+}
+
+.slidebar img {
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.register_match {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  font-family: Century Gothic;
+  letter-spacing: 0.02em;
+  margin: 10px 0px 0px 0px;
+}
+
+.head_desc {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: Century Gothic;
+}
+
+.subhead_desc {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Century Gothic;
+}
+
+.survival_content {
+  font-family: Century Gothic;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.bar_font {
+  font-size: 14px;
+  font-family: Century Gothic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+}
+
+.content_wrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tvm_font {
+  font-size: 14px;
+  font-family: Century Gothic;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.image_text {
+  position: absolute;
+  padding-left: 5px;
+  bottom: 8px;
+}
+
+.view_more {
+  margin-left: 70px;
+}
+
+.sort_btn {
+  margin-right: 10px;
+}
+
+//Slider CSS
+
+.carusol {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.imagegroup {
+  display: flex;
+
+  gap: 3rem;
+
+  width: 350px;
+
+  height: 170px;
+
+  margin-bottom: 20px;
+}
+
+.imagegroup img {
+  flex-shrink: 0;
+
+  object-fit: cover;
+}
+
+.imagegroup {
+  animation: travel 1s ease-in-out infinite;
+}
+
+@keyframes travel {
+  0%,
+  100% {
+    transform: translate3d(10, 20, 0);
+  }
+
+  100% {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
+
+// regitered match component
+
+.roomdetails_container {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.zeromin {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  margin-left: 20px;
+
+  text-align: center;
+}
+
+.zeromin h1 {
+  font-weight: bold;
+
+  font-size: 30px;
+
+  margin-top: 3px;
+
+  margin-bottom: 3px;
+}
+
+.roomId span {
+  font-size: 14px;
+
+  margin-right: 18px;
+}
+
+.roomPwd span {
+  font-size: 14px;
+
+  margin-right: 10px;
+}
+
+.countdown {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.countdown h2 {
+  font-weight: bold;
+
+  font-size: 25px;
+
+  margin-top: 3px;
+
+  margin-bottom: 3px;
+}
+
+.sendMailBtn {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  border: 1px solid #ff7a00;
+
+  padding: 10px;
+
+  margin-left: 20px;
+
+  width: 100%;
+
+  height: 44px;
+
+  border-radius: 4px;
+
+  font-size: 15px;
+
+  background-color: #ff7a00;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 20px 10px 0px 0px;
+  }
+}
+
+.sendmailbtnContainer {
+  @media (max-width: $breakpoint-md) {
+    margin: 20px 10px 0px 0px;
+  }
+}
+
+.roomdetails {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.roomcreds {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.roomId {
+  font-size: 12px;
+}
+
+.Teammembers {
+  margin-top: 20px;
+
+  border-bottom: 1px solid grey;
+
+  padding-bottom: 20px;
+
+  font-size: x-large;
+
+  font-weight: bold;
+
+  padding-left: 3%;
+}
+
+.reviewsContainer {
+  margin-top: 30px;
+  padding-left: 2%;
+  // align-items: flex-start;
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+
+    justify-content: center;
+  }
+}
+
+.reviewCard {
+  color: white;
+
+  border: 1px solid #ff7a00;
+
+  border-radius: 5px;
+
+  padding: 10px;
+
+  width: 330px;
+}
+
+.profile {
+  margin-left: 5px;
+
+  border-radius: 10px;
+
+  height: 70%;
+}
+
+.reviews {
+  display: flex;
+
+  align-items: center;
+}
+
+.reviewer {
+  padding-left: 15px;
+}
+
+.name h2 {
+  color: #ff7a00;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+.name {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.reviewer p {
+  font-weight: 300;
+
+  font-size: 15px;
+
+  margin-top: 5px;
+}
+
+.reviewer span {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-right: 10px;
+}
+
+.greenCircle {
+  height: 10px;
+
+  width: 10px;
+
+  border-radius: 50%;
+
+  background: green;
+}
+
+.main_winning_pool {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+.inner_winning_pool {
+  background: linear-gradient(
+    131.26deg,
+    #ffffff 26.63%,
+
+    rgb(255 122 0 / 74%) 450.26%
+  );
+
+  padding: 0px;
+
+  width: 36%;
+
+  border-radius: 16px;
+
+  @media (max-width: $breakpoint-xs) {
+    width: 90% !important;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 50%;
+  }
+
+  @media (max-width: $breakpoint-ms) {
+    width: 50%;
+  }
+}
+
+.text_pool_cls {
+  padding: 18px;
+
+  background: #ff7a00;
+
+  text-align: center;
+
+  border-top-right-radius: 16px;
+
+  border-top-left-radius: 16px;
+}
+
+.pool_heading {
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 26.97px;
+}
+
+.pool_para {
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 22.07px;
+}
+
+.pool_cancel_p {
+  text-align: center;
+}
+
+.cancel_icon {
+  background-color: #ff7a00;
+
+  border-radius: 24px;
+
+  margin: 12px 0px;
+
+  font-size: 26px;
+
+  padding: 3px;
+}
+
+.pool_text_p {
+  color: #003554;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  line-height: 22.07px;
+
+  padding-top: 16px;
+}
+
+.rs_pool_logo {
+  color: #003554 !important;
+}
+
+.slides_image:nth-child(3) {
+  display: none;
+}
+
+.slick-slide {
+  width: 100px !important;
+}
+
+// .slider-container {
+
+//   width: 80%;
+
+//   margin: 0 auto;
+
+// }
+
+.img_slider_one {
+  width: auto;
+
+  height: 138px;
+
+  margin-top: 12px;
+
+  @media (max-width: $breakpoint-xSmall) {
+    height: 86px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    height: 86px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+  }
+}
+.game_imgsection {
+  display: flex;
+  column-gap: 18px;
+}
+.progress_cls {
+  accent-color: #ff7a00;
+  width: 50%;
+}
+
+/* Slider.module.css */
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  overflow: hidden;
+}
+.slideItem {
+  flex: 0 0 100%;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.5;
+}
+.slideItem.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.inner_cont,
+.slideContainer {
+  display: flex;
+}
+.prevButton,
+.nextButton {
+  background: none;
+  border: none;
+  color: white;
+}
+.outline_icon {
+  font-size: 18px;
+  background: #ff7a00;
+  border-radius: 18px;
+}
